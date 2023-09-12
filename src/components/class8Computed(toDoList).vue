@@ -12,19 +12,17 @@ const todos = ref([
 ])
 
 function addTodo() {
-  newTodo.value &&
   todos.value.push({ id: id++, text: newTodo.value, done: false })
   newTodo.value = ''
 }
 
 const filteredTodos =computed(()=>{
-  if(hideCompleted.value == true){
+  if(hideCompleted.value==true){
     return todos.value.filter((t) => t.done !== true)
     }else{
       return todos.value
     }
   })
-  
 function removeTodo(todo) {
   todos.value = todos.value.filter((t) => t !== todo)
 }
