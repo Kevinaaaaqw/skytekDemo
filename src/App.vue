@@ -2,11 +2,13 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import ToDoList from "./components/class8Computed(toDoList).vue"
+import Movie from "./components/mooiv.vue"
+
   
 </script>
 
 <template>
-  <ToDoList/>
+  <Movie/>
 </template>
 
 <style scoped>
